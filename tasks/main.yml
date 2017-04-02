@@ -1,0 +1,13 @@
+---
+
+- name: "remove unused editors"
+  package:
+    name: "{{ item }}"
+    state: absent
+  with_items: "{{ editors_remove }}"
+
+- name: "install editors"
+  package:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ editors_install }}"

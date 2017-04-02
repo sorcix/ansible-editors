@@ -1,0 +1,10 @@
+---
+
+editors_install:
+  - "vim"
+
+editors_remove:
+  - "nano"
+  - "pico"
+  - "vi"
+  - "emacs"
